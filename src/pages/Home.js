@@ -7,7 +7,7 @@ const Home = () => {
     <div className={styles.home}>
       <h1>React Interview Questions and Answers</h1>
       {data.map((item) => {
-        return <Accord {...item} />;
+        return <Accord key={item.id} {...item} />;
       })}
     </div>
   );
